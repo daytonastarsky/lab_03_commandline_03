@@ -187,7 +187,11 @@ Use less and more on the file to show the contents of the file.  Try pressing sp
 
 Write the command that you used below.  Describe what spacebar and q does after using either less or more.
 ----------
+less pg1232.txt
+more pg1232.txt
 
+space shows you more, like flipping pages
+q gives you back the command bar
 
 
 ==========
@@ -195,15 +199,22 @@ Write the command that you used below.  Describe what spacebar and q does after 
 
 (Some characteristics that may help your description might be the length of the file, whether or not you'd like to read the whole thing... or just the beginning or end, etc.)
 ----------
-
+tail: to see the very end of the .txt file
+head: to see the very start of the .txt file
+more: able to see part of the .txt file and with space read more
+less: able to see smaller part of the .txt file and with space read more
 
 
 ==========
 21.  How many words are in pg1232.txt?  What command did you use to determine the word count?
 ----------
 
+wc pg1232.txt
 
-
+ 52639 
 ==========
 22.  How many lines are in pg1232.txt?  What command did you use to determine the line count?
 ----------
+5063
+
+wc pg1232.txt
