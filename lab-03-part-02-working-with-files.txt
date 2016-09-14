@@ -37,6 +37,7 @@ $ ls
 Copy and paste the output below.
 ----------
 
+foo.txt
 
 
 ==========
@@ -52,30 +53,49 @@ $ touch bar.txt
 
 Copy and paste the output below.
 ----------
+ls -al
 
+drwxr-xr-x  4 starsky  staff  136 Sep 14 11:17 .
+drwxr-xr-x  9 starsky  staff  306 Sep 14 11:15 ..
+-rw-r--r--  1 starsky  staff    0 Sep 14 11:17 bar.txt
+-rw-r--r--  1 starsky  staff    0 Sep 14 11:15 foo.txt
 
 
 ==========
 9. Create a copy of bar.txt called baz.txt and then list the files again.
 
+-rw-r--r--  1 starsky  staff  0 Sep 14 11:17 bar.txt
+-rw-r--r--  1 starsky  staff  0 Sep 14 11:18 baz.txt
+-rw-r--r--  1 starsky  staff  0 Sep 14 11:15 foo.txt
 
 Write the command that you used to copy the file.  Additionally, copy and paste the output of your file listing below.
 ----------
 
+cp bar.txt baz.txt
 
+-rw-r--r--  1 starsky  staff  0 Sep 14 11:17 bar.txt
+-rw-r--r--  1 starsky  staff  0 Sep 14 11:18 baz.txt
+-rw-r--r--  1 starsky  staff  0 Sep 14 11:15 foo.txt
 
 ==========
 10. Delete the file called bar.txt and then list the files again.
+baz.txt	foo.txt
 
 Write the command that you used to remove the file.  Copy and paste the output of your file listing below.
 ----------
+rm bar.txt
+
+-rw-r--r--  1 starsky  staff  0 Sep 14 11:18 baz.txt
+-rw-r--r--  1 starsky  staff  0 Sep 14 11:15 foo.txt
 ==========
 11. Move the file called foo.txt to qux.txt and then list the files again.
 
 
 Write the command that you used to move the file.  Copy and paste the output of your file listing below.
 ----------
+mv foo.txt qux.txt
 
+baz.txt	qux.txt
 
 
 ==========
@@ -90,7 +110,9 @@ Write the command that you used to move the file.  Copy and paste the output of 
 
 Write out the command that you used and what happened.
 ----------
+rmdir my_files
 
+rmdir: my_files: Directory not empty
 
 
 ==========
@@ -98,8 +120,9 @@ Write out the command that you used and what happened.
 
 Write out the command that you used and what happened.
 ----------
+rm: my_files
 
-
+rm: my_files: is a directory
 
 ==========
 15. MAKE SURE YOU'RE IN THE mtec1002-lab-03 directory!  
@@ -121,7 +144,7 @@ Use the command called cat on the file to show its contents.
 Describe what happened below.
 ----------
 
-
+alot of text appeared
 
 ==========
 17. That was a lot of text.  Let's find ways to limit it.  Using the same file...
@@ -132,8 +155,11 @@ Use the command, head, on the file to show the contents of the beginning of the 
 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
+head pg1232.txt
 
-
+You may copy it, give it away or
+re-use it under the terms of the Project Gutenberg License included
+with this eBook or online at www.gutenberg.org
 
 ==========
 18. Using the same file again!
@@ -144,7 +170,12 @@ Use tail on the file to show the contents of the end of the file.
 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
+tail pg1232.txt
 
+This Web site includes information about Project Gutenberg-tm,
+including how to make donations to the Project Gutenberg Literary
+Archive Foundation, how to help produce our new eBooks, and how to
+subscribe to our email newsletter to hear about new eBooks.
 
 
 ==========
